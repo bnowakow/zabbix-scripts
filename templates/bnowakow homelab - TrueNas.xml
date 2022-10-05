@@ -71,6 +71,19 @@
 					</triggers>
 				</item>
 				<item>
+					<uuid>6f69785892474a0c9a8973ba8613249d</uuid>
+					<name>Last crashplan SyncProgressStats</name>
+					<key>bnowakow.nas.crashplan.last-crashplan-SyncProgressStats</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>63b556a36caa42e184ed5a9cdd208b61</uuid>
 					<name>Is helm up to date - duckdns</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[duckdns]</key>
