@@ -1,0 +1,251 @@
+<?xml version="1.0" ?>
+<zabbix_export>
+	<version>6.2</version>
+	<date>2016-01-01T01:01:01Z</date>
+	<template_groups>
+		<template_group>
+			<uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+			<name>Templates</name>
+		</template_group>
+	</template_groups>
+	<templates>
+		<template>
+			<uuid>d6896251ae584fd9a5d2c609d05a70a8</uuid>
+			<template>bnowakow homelab - TrueNas</template>
+			<name>bnowakow homelab - TrueNas</name>
+			<groups>
+				<group>
+					<name>Templates</name>
+				</group>
+			</groups>
+			<items>
+				<item>
+					<uuid>c936142010504898858b7357b643ff1a</uuid>
+					<name>Number of days since last backup - ovh</name>
+					<key>bnowakow.nas.backup.number-of-days-since-last-backup[ovh]</key>
+					<delay>1h</delay>
+					<units>days</units>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>b890690c2ded4626a23a2f372f01445d</uuid>
+					<name>Number of days since last backup - proxmox</name>
+					<key>bnowakow.nas.backup.number-of-days-since-last-backup[proxmox]</key>
+					<delay>1h</delay>
+					<units>days</units>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>12083b3c49714d9abf5b582f89f1d0f8</uuid>
+					<name>Is crashplan running</name>
+					<key>bnowakow.nas.crashplan.is-crashplan-running</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+					<triggers>
+						<trigger>
+							<uuid>4355c17a7aa44b5f9b577bbf8a09a5d6</uuid>
+							<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.crashplan.is-crashplan-running)&lt;&gt;&quot;true&quot;</expression>
+							<name>Crashplan service isn't running</name>
+							<priority>HIGH</priority>
+							<manual_close>YES</manual_close>
+							<tags>
+								<tag>
+									<tag>bnowakow</tag>
+								</tag>
+							</tags>
+						</trigger>
+					</triggers>
+				</item>
+				<item>
+					<uuid>63b556a36caa42e184ed5a9cdd208b61</uuid>
+					<name>Is helm up to date - duckdns</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[duckdns]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>555a90ec83024e3d8a724ccb201a0301</uuid>
+					<name>Is helm up to date - home-assistant</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[home-assistant]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>47a28b57dbbd4dd6bc003fbda967dc12</uuid>
+					<name>Is helm up to date - plex</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[plex]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>13994e34854a41bcaa7cbf1f1d1f45c9</uuid>
+					<name>Is helm up to date - zabbix</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[zabbix]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>23d3ebcf6dcd4f2fa4413c93b1e74b57</uuid>
+					<name>Is plex running</name>
+					<key>bnowakow.nas.plex.is-plex-running</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+					<triggers>
+						<trigger>
+							<uuid>7c07e874883449759b96e197e87266d5</uuid>
+							<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.plex.is-plex-running)&lt;&gt;&quot;true&quot;</expression>
+							<name>Plex isn't running</name>
+							<priority>HIGH</priority>
+							<manual_close>YES</manual_close>
+							<tags>
+								<tag>
+									<tag>bnowakow</tag>
+								</tag>
+							</tags>
+						</trigger>
+					</triggers>
+				</item>
+				<item>
+					<uuid>0e1dddb08c75421a95cf7c2fba6b9047</uuid>
+					<name>Is nordvpn running</name>
+					<key>bnowakow.nas.transmission.is-nordvpn-running</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>c9fc0e7b260046dfb06b1e1d8db762d0</uuid>
+					<name>Is transmission running</name>
+					<key>bnowakow.nas.transmission.is-transmission-running</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>7e62e7956f234b48aee338040fe170c6</uuid>
+					<name>Is TrueNAS up to date</name>
+					<key>bnowakow.nas.truenas.is-truenas-up-to-date</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+					<triggers>
+						<trigger>
+							<uuid>26088954fc184560a66a1e1a555c1391</uuid>
+							<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.truenas.is-truenas-up-to-date)&lt;&gt;&quot;true&quot;</expression>
+							<name>TrueNAS is out of date</name>
+							<priority>HIGH</priority>
+							<manual_close>YES</manual_close>
+							<tags>
+								<tag>
+									<tag>bnowakow</tag>
+								</tag>
+							</tags>
+						</trigger>
+					</triggers>
+				</item>
+			</items>
+			<tags>
+				<tag>
+					<tag>bnowakow</tag>
+				</tag>
+			</tags>
+		</template>
+	</templates>
+	<triggers>
+		<trigger>
+			<uuid>071979f6348a42ce9170936974091546</uuid>
+			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.k8s.is-helm-up-to-date[duckdns])&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.k8s.is-helm-up-to-date[home-assistant])&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.k8s.is-helm-up-to-date[plex])&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.k8s.is-helm-up-to-date[zabbix])&lt;&gt;&quot;true&quot;</expression>
+			<name>Helm is out of date</name>
+			<priority>AVERAGE</priority>
+			<manual_close>YES</manual_close>
+			<tags>
+				<tag>
+					<tag>bnowakow</tag>
+				</tag>
+			</tags>
+		</trigger>
+		<trigger>
+			<uuid>8fddfeffee324e6694ce938c347e54df</uuid>
+			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[proxmox])&gt;5</expression>
+			<name>Number of days since last backup &gt; 5</name>
+			<priority>HIGH</priority>
+			<manual_close>YES</manual_close>
+			<tags>
+				<tag>
+					<tag>bnowakow</tag>
+				</tag>
+			</tags>
+		</trigger>
+		<trigger>
+			<uuid>760ab80eaddc4fdfa9b5181774157713</uuid>
+			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.transmission.is-transmission-running)&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.transmission.is-nordvpn-running)&lt;&gt;&quot;true&quot;</expression>
+			<name>Transmission or nordvpn is not running</name>
+			<priority>HIGH</priority>
+			<manual_close>YES</manual_close>
+			<tags>
+				<tag>
+					<tag>bnowakow</tag>
+				</tag>
+			</tags>
+		</trigger>
+	</triggers>
+</zabbix_export>

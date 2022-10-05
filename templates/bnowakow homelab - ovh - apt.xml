@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<zabbix_export>
+	<version>6.2</version>
+	<date>2016-01-01T01:01:01Z</date>
+	<template_groups>
+		<template_group>
+			<uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+			<name>Templates</name>
+		</template_group>
+	</template_groups>
+	<templates>
+		<template>
+			<uuid>c8639919152a4dd6bec98e9e872908ef</uuid>
+			<template>bnowakow homelab - ovh - apt</template>
+			<name>bnowakow homelab - ovh - apt</name>
+			<groups>
+				<group>
+					<name>Templates</name>
+				</group>
+			</groups>
+			<items>
+				<item>
+					<uuid>f0f50c676e2049dab3f169e7bac4cdc0</uuid>
+					<name>Is apt up to date</name>
+					<key>bnowakow.ovh.apt.is-apt-up-to-date</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+					<triggers>
+						<trigger>
+							<uuid>fb6cd7c642de44ccbc0ddece46cb869a</uuid>
+							<expression>last(/bnowakow homelab - ovh - apt/bnowakow.ovh.apt.is-apt-up-to-date)&lt;&gt;&quot;true&quot;</expression>
+							<name>apt is out of date</name>
+							<priority>HIGH</priority>
+							<manual_close>YES</manual_close>
+							<tags>
+								<tag>
+									<tag>bnowakow</tag>
+								</tag>
+							</tags>
+						</trigger>
+					</triggers>
+				</item>
+			</items>
+			<tags>
+				<tag>
+					<tag>bnowakow</tag>
+				</tag>
+			</tags>
+		</template>
+	</templates>
+</zabbix_export>
