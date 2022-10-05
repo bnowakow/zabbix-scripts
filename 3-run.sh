@@ -4,6 +4,7 @@ python2 zabbix.template.export.py --url http://192.168.1.49:10211 --user='Admin'
 # TODO figure out how to download only my templates (i.e. using tag) in above --template argument. As workaround deleting other templates
 find templates -type f -not -name 'bnowakow*' -delete
 
+# foobar - to be removed
 if ! git status | grep 'nothing to commit' >/dev/null; then 
     git status
     git commit -am "update on $(date)"
