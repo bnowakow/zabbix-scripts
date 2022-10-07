@@ -97,19 +97,6 @@
 					</tags>
 				</item>
 				<item>
-					<uuid>555a90ec83024e3d8a724ccb201a0301</uuid>
-					<name>Is helm up to date - home-assistant</name>
-					<key>bnowakow.nas.k8s.is-helm-up-to-date[home-assistant]</key>
-					<delay>1h</delay>
-					<trends>0</trends>
-					<value_type>TEXT</value_type>
-					<tags>
-						<tag>
-							<tag>bnowakow</tag>
-						</tag>
-					</tags>
-				</item>
-				<item>
 					<uuid>47a28b57dbbd4dd6bc003fbda967dc12</uuid>
 					<name>Is helm up to date - plex</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[plex]</key>
@@ -224,18 +211,6 @@
 		</template>
 	</templates>
 	<triggers>
-		<trigger>
-			<uuid>071979f6348a42ce9170936974091546</uuid>
-			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.k8s.is-helm-up-to-date[duckdns])&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.k8s.is-helm-up-to-date[home-assistant])&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.k8s.is-helm-up-to-date[plex])&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.k8s.is-helm-up-to-date[zabbix])&lt;&gt;&quot;true&quot;</expression>
-			<name>Helm is out of date</name>
-			<priority>AVERAGE</priority>
-			<manual_close>YES</manual_close>
-			<tags>
-				<tag>
-					<tag>bnowakow</tag>
-				</tag>
-			</tags>
-		</trigger>
 		<trigger>
 			<uuid>8fddfeffee324e6694ce938c347e54df</uuid>
 			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[proxmox])&gt;5</expression>
