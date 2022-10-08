@@ -20,6 +20,18 @@
 			</groups>
 			<items>
 				<item>
+					<uuid>5271043fc67949e1ab1f13faba62cc98</uuid>
+					<name>Number of days since last backup - home-assistant</name>
+					<key>bnowakow.nas.backup.number-of-days-since-last-backup[home-assistant]</key>
+					<delay>1h</delay>
+					<units>days</units>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>c936142010504898858b7357b643ff1a</uuid>
 					<name>Number of days since last backup - ovh</name>
 					<key>bnowakow.nas.backup.number-of-days-since-last-backup[ovh]</key>
@@ -213,7 +225,7 @@
 	<triggers>
 		<trigger>
 			<uuid>8fddfeffee324e6694ce938c347e54df</uuid>
-			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[proxmox])&gt;5</expression>
+			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[proxmox])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[home-assistant])&gt;5</expression>
 			<name>Number of days since last backup &gt; 5</name>
 			<priority>HIGH</priority>
 			<manual_close>YES</manual_close>
