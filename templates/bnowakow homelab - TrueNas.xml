@@ -148,6 +148,19 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>95f0535322e84bbdadf9f1cc60964cba</uuid>
+					<name>Is helm up to date - tautulli</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[tautulli]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>13994e34854a41bcaa7cbf1f1d1f45c9</uuid>
 					<name>Is helm up to date - zabbix</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[zabbix]</key>
