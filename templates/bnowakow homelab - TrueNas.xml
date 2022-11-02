@@ -32,9 +32,21 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>d2595c83690743d09dbf3c61044d3812</uuid>
+					<name>Number of days since last backup - ovh admin</name>
+					<key>bnowakow.nas.backup.number-of-days-since-last-backup[ovh-admin]</key>
+					<delay>1h</delay>
+					<units>days</units>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>c936142010504898858b7357b643ff1a</uuid>
-					<name>Number of days since last backup - ovh</name>
-					<key>bnowakow.nas.backup.number-of-days-since-last-backup[ovh]</key>
+					<name>Number of days since last backup - ovh sup</name>
+					<key>bnowakow.nas.backup.number-of-days-since-last-backup[ovh-sup]</key>
 					<delay>1h</delay>
 					<units>days</units>
 					<tags>
@@ -99,6 +111,19 @@
 					<uuid>73c0fba32cbd41cc840dca557ca94706</uuid>
 					<name>Is ha hassos up to date</name>
 					<key>bnowakow.nas.ha.is-hassos-up-to-date</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>9e0cb6b81fa6448c8af5b2071d1793de</uuid>
+					<name>Is ha Home Assistant addons up to date</name>
+					<key>bnowakow.nas.ha.is-home-assistant-addons-up-to-date</key>
 					<delay>1h</delay>
 					<trends>0</trends>
 					<value_type>TEXT</value_type>
@@ -264,7 +289,7 @@
 	<triggers>
 		<trigger>
 			<uuid>0beaf4bf1b364adeb4b0f17ee4e23c04</uuid>
-			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.ha.is-hassos-up-to-date)&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.ha.is-home-assistant-up-to-date)&lt;&gt;&quot;true&quot;</expression>
+			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.ha.is-hassos-up-to-date)&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.ha.is-home-assistant-up-to-date)&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.ha.is-home-assistant-addons-up-to-date)&lt;&gt;&quot;true&quot;</expression>
 			<name>Home Assistant or hassos isn't up to date</name>
 			<priority>HIGH</priority>
 			<manual_close>YES</manual_close>
@@ -276,7 +301,7 @@
 		</trigger>
 		<trigger>
 			<uuid>8fddfeffee324e6694ce938c347e54df</uuid>
-			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[proxmox])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[home-assistant])&gt;5</expression>
+			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh-sup])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh-admin])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[proxmox])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[home-assistant])&gt;5</expression>
 			<name>Number of days since last backup &gt; 5</name>
 			<priority>HIGH</priority>
 			<manual_close>YES</manual_close>
