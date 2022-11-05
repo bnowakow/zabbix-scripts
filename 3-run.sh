@@ -8,6 +8,7 @@ find templates -type f -not -name 'bnowakow*' -delete
 
 if ! git status | grep 'nothing to commit' > /dev/null; then 
     git status
+    git add --all
     git commit -am "update on $(date)"
 fi
 
