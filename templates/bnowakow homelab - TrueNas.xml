@@ -95,7 +95,33 @@
 					</triggers>
 				</item>
 				<item>
+					<uuid>8579bb91a7e64eefa8c608c34fecdc5a</uuid>
+					<name>Last crashplan backed up</name>
+					<key>bnowakow.nas.crashplan.last-crashplan-backed-up</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>6f69785892474a0c9a8973ba8613249d</uuid>
+					<name>Last crashplan scanning files completed</name>
+					<key>bnowakow.nas.crashplan.last-crashplan-scanning-files-completed</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>e9ceaafcfe9848ffad29e07807d151cd</uuid>
 					<name>Last crashplan SyncProgressStats</name>
 					<key>bnowakow.nas.crashplan.last-crashplan-SyncProgressStats</key>
 					<delay>1h</delay>
