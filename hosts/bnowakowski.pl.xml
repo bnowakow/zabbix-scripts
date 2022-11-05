@@ -14,10 +14,10 @@
 			<name>bnowakowski.pl</name>
 			<templates>
 				<template>
-					<name>bnowakow homelab - ovh - apt</name>
+					<name>bnowakow homelab - ovh - debian</name>
 				</template>
 				<template>
-					<name>bnowakow homelab - ovh - docker</name>
+					<name>bnowakow homelab - ovh - ovh_specific</name>
 				</template>
 				<template>
 					<name>Linux by Zabbix agent</name>

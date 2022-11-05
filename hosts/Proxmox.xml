@@ -14,7 +14,7 @@
 			<name>Proxmox</name>
 			<templates>
 				<template>
-					<name>bnowakow homelab - ovh - apt</name>
+					<name>bnowakow homelab - ovh - debian</name>
 				</template>
 				<template>
 					<name>bnowakow homelab - Proxmox</name>
