@@ -20,9 +20,21 @@
 			</groups>
 			<items>
 				<item>
+					<uuid>1575afbf142a4c278b8378f36810e99c</uuid>
+					<name>Number of days since last backup - etc</name>
+					<key>bnowakow.ovh.backup.number-of-days-since-last-etc-backup</key>
+					<delay>1h</delay>
+					<units>days</units>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>b1ae6d882a0a4fb2b95f49bd2da39951</uuid>
 					<name>Number of days since last backup - mysql - piwigo</name>
-					<key>bnowakow.ovh.backup.number-of-days-since-last-mysql-backup.sh[piwigo]</key>
+					<key>bnowakow.ovh.backup.number-of-days-since-last-mysql-backup[piwigo]</key>
 					<delay>1h</delay>
 					<units>days</units>
 					<tags>
@@ -34,7 +46,7 @@
 				<item>
 					<uuid>04494d0a7dbf496580b96bd612564591</uuid>
 					<name>Number of days since last backup - mysql - Wordpress</name>
-					<key>bnowakow.ovh.backup.number-of-days-since-last-mysql-backup.sh[wordpress]</key>
+					<key>bnowakow.ovh.backup.number-of-days-since-last-mysql-backup[wordpress]</key>
 					<delay>1h</delay>
 					<units>days</units>
 					<tags>
@@ -105,7 +117,7 @@
 		</trigger>
 		<trigger>
 			<uuid>c6e023942eaa4f89b8c05f9e58a20457</uuid>
-			<expression>last(/bnowakow homelab - ovh - ovh_specific/bnowakow.ovh.backup.number-of-days-since-last-mysql-backup.sh[piwigo])&gt;5 or last(/bnowakow homelab - ovh - ovh_specific/bnowakow.ovh.backup.number-of-days-since-last-mysql-backup.sh[wordpress])&gt;5</expression>
+			<expression>last(/bnowakow homelab - ovh - ovh_specific/bnowakow.ovh.backup.number-of-days-since-last-mysql-backup[piwigo])&gt;5 or last(/bnowakow homelab - ovh - ovh_specific/bnowakow.ovh.backup.number-of-days-since-last-mysql-backup[wordpress])&gt;5 or last(/bnowakow homelab - ovh - ovh_specific/bnowakow.ovh.backup.number-of-days-since-last-etc-backup)&gt;5</expression>
 			<name>Number of days since last backup &gt; 5</name>
 			<priority>HIGH</priority>
 			<manual_close>YES</manual_close>
