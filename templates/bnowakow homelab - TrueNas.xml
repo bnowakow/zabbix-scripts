@@ -108,6 +108,19 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>b3d72386fe8c4e70bdd5a60e5f821be3</uuid>
+					<name>Last crashplan history in service.log</name>
+					<key>bnowakow.nas.crashplan.last-crashplan-history-in-service</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>6f69785892474a0c9a8973ba8613249d</uuid>
 					<name>Last crashplan scanning files completed</name>
 					<key>bnowakow.nas.crashplan.last-crashplan-scanning-files-completed</key>
