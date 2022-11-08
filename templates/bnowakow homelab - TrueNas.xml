@@ -227,7 +227,7 @@
 				<item>
 					<uuid>13994e34854a41bcaa7cbf1f1d1f45c9</uuid>
 					<name>Is helm up to date - zabbix</name>
-					<key>bnowakow.nas.k8s.is-helm-up-to-date[zabbix-server]</key>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[zabbix]</key>
 					<delay>1h</delay>
 					<trends>0</trends>
 					<value_type>TEXT</value_type>
