@@ -199,6 +199,19 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>5c3bce6b68304b1eb296a459779aa361</uuid>
+					<name>Is helm up to date - pihole</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[pihole]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>47a28b57dbbd4dd6bc003fbda967dc12</uuid>
 					<name>Is helm up to date - plex</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[plex]</key>
@@ -215,6 +228,19 @@
 					<uuid>95f0535322e84bbdadf9f1cc60964cba</uuid>
 					<name>Is helm up to date - tautulli</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[tautulli]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>af667b38d2ba44428d9d788dd1601a34</uuid>
+					<name>Is helm up to date - unifi</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[unifi]</key>
 					<delay>1h</delay>
 					<trends>0</trends>
 					<value_type>TEXT</value_type>
