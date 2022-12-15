@@ -14,7 +14,7 @@
 			<name>TrueNAS - SNMP</name>
 			<templates>
 				<template>
-					<name>TrueNAS SNMP</name>
+					<name>TrueNAS by SNMP</name>
 				</template>
 			</templates>
 			<groups>
