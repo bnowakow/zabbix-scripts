@@ -1,8 +1,13 @@
 #!/bin/bash
 
 cd /mnt/MargokPool/home/sup/code/zabbix-scripts
-python2 zabbix.template.export.py --url http://192.168.1.49:10211 --user='Admin' --password="$(cat .password)" --template='All'
-python2 zabbix.template.export.py --url http://192.168.1.49:10211 --user='Admin' --password="$(cat .password)" --template='All' --type='host' --out-dir='hosts'
+
+port=10211
+# TMP ports changed when load balancer isn't working
+port=65011
+python2 zabbix.template.export.py --url http://192.168.1.49:$port --user='Admin' --password="$(cat .password)" --template='All'
+python2 zabbix.template.export.py --url http://192.168.1.49:$port --user='Admin' --password="$(cat .password)" --template='All' --type='host' --out-dir='hosts'
+
 # TODO figure out how to download only my templates (i.e. using tag) in above --template argument. As workaround deleting other templates
 find templates -type f -not -name 'bnowakow*' -delete
 

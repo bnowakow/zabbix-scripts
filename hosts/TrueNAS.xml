@@ -39,7 +39,7 @@
 			</interfaces>
 			<inventory>
 				<name>margok</name>
-				<os>Linux version 5.10.142+truenas (root@tnsbuilds01.tn.ixsystems.net) (gcc (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils </os>
+				<os>Linux version 5.15.79+truenas (root@tnsbuilds01.tn.ixsystems.net) (gcc (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils f</os>
 				<location_lat>56.95387</location_lat>
 				<location_lon>24.22067</location_lon>
 			</inventory>
