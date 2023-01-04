@@ -348,7 +348,7 @@
 					<uuid>55175073969847c6bc6a418c0cedd09b</uuid>
 					<name>Last Sie Pomaga amount</name>
 					<key>bnowakow.sie-pomaga.last-amount</key>
-					<delay>30m</delay>
+					<delay>10m</delay>
 					<history>1000d</history>
 					<trends>0</trends>
 					<value_type>TEXT</value_type>
