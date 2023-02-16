@@ -24,7 +24,8 @@
 			</groups>
 			<interfaces>
 				<interface>
-					<ip>192.168.1.67</ip>
+					<ip>192.168.0.30</ip>
+					<dns>homeassistant.localdomain</dns>
 					<interface_ref>if1</interface_ref>
 				</interface>
 			</interfaces>

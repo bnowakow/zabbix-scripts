@@ -33,7 +33,8 @@
 			</groups>
 			<interfaces>
 				<interface>
-					<ip>192.168.1.49</ip>
+					<ip>192.168.0.20</ip>
+					<dns>nas.localdomain</dns>
 					<interface_ref>if1</interface_ref>
 				</interface>
 			</interfaces>

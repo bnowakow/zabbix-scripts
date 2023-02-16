@@ -33,12 +33,14 @@
 			</groups>
 			<interfaces>
 				<interface>
-					<ip>192.168.1.56</ip>
+					<ip>192.168.0.10</ip>
+					<dns>proxmox.localdomain</dns>
 					<interface_ref>if1</interface_ref>
 				</interface>
 				<interface>
 					<type>SNMP</type>
-					<ip>192.168.1.56</ip>
+					<ip>192.168.0.10</ip>
+					<dns>proxmox.localdomain</dns>
 					<port>161</port>
 					<details>
 						<community>{$SNMP_COMMUNITY}</community>

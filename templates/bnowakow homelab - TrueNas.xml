@@ -20,6 +20,97 @@
 			</groups>
 			<items>
 				<item>
+					<uuid>31a74b7dae544fcab11d0b66ab4a04b2</uuid>
+					<name>Is GitHub fork synced with upstream - docker-jdupes-gui</name>
+					<key>bnowakow.github.fork-synced-with-upstream[docker-jdupes-gui]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>fcae53e37f7d47d081f0f5d0081a515c</uuid>
+					<name>Is GitHub fork synced with upstream -  docker-mailserver</name>
+					<key>bnowakow.github.fork-synced-with-upstream[docker-mailserver]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>24590090fdc84c158450c4e44f9fa159</uuid>
+					<name>Is GitHub fork synced with upstream - crashplan</name>
+					<key>bnowakow.github.fork-synced-with-upstream[docker-ubuntu-novnc-crashplan]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>50351c892aec4dd5a49c297e3e4b7416</uuid>
+					<name>Is GitHub fork synced with upstream - medihunter</name>
+					<key>bnowakow.github.fork-synced-with-upstream[medihunter]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>e59e14fb628e412aa469e033badfa648</uuid>
+					<name>Is GitHub fork synced with upstream - truetool</name>
+					<key>bnowakow.github.fork-synced-with-upstream[truetool]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>0f85a0eda806490c8081f7eb01e6e04e</uuid>
+					<name>Is GitHub fork synced with upstream - universal-trakt-scrobbler</name>
+					<key>bnowakow.github.fork-synced-with-upstream[universal-trakt-scrobbler]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>2edbf248adb44653994f2d628d42617f</uuid>
+					<name>Is GitHub fork synced with upstream - zabbix-scripts</name>
+					<key>bnowakow.github.fork-synced-with-upstream[zabbix-scripts]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>5271043fc67949e1ab1f13faba62cc98</uuid>
 					<name>Number of days since last backup - home-assistant</name>
 					<key>bnowakow.nas.backup.number-of-days-since-last-backup[home-assistant]</key>
@@ -238,20 +329,6 @@
 					</tags>
 				</item>
 				<item>
-					<uuid>af667b38d2ba44428d9d788dd1601a34</uuid>
-					<name>Is helm up to date - unifi</name>
-					<key>bnowakow.nas.k8s.is-helm-up-to-date[unifi]</key>
-					<delay>1h</delay>
-					<trends>0</trends>
-					<status>DISABLED</status>
-					<value_type>TEXT</value_type>
-					<tags>
-						<tag>
-							<tag>bnowakow</tag>
-						</tag>
-					</tags>
-				</item>
-				<item>
 					<uuid>13994e34854a41bcaa7cbf1f1d1f45c9</uuid>
 					<name>Is helm up to date - zabbix</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[zabbix]</key>
@@ -345,11 +422,24 @@
 					</triggers>
 				</item>
 				<item>
-					<uuid>55175073969847c6bc6a418c0cedd09b</uuid>
+					<uuid>54f904e22c69431f981b9bbdb6f1353c</uuid>
 					<name>Last Sie Pomaga amount</name>
 					<key>bnowakow.sie-pomaga.last-amount</key>
-					<delay>10m</delay>
+					<delay>5m</delay>
 					<history>1000d</history>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>99348e209a60411bbab066ec0af5ed34</uuid>
+					<name>Is vagrant basebox latest ubuntu version</name>
+					<key>bnowakow.vagrant.basebox-has-up-to-date-ubuntu</key>
+					<delay>1h</delay>
 					<trends>0</trends>
 					<value_type>TEXT</value_type>
 					<tags>

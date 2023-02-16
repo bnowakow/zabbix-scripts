@@ -25,7 +25,8 @@
 			<interfaces>
 				<interface>
 					<type>SNMP</type>
-					<ip>192.168.1.49</ip>
+					<ip>192.168.0.20</ip>
+					<dns>nas.localdomain</dns>
 					<port>161</port>
 					<details>
 						<community>{$SNMP_COMMUNITY}</community>
