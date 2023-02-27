@@ -12,6 +12,7 @@
 		<host>
 			<host>Proxmox</host>
 			<name>Proxmox</name>
+			<status>DISABLED</status>
 			<templates>
 				<template>
 					<name>bnowakow homelab - ovh - debian</name>
