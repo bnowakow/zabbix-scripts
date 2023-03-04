@@ -72,6 +72,32 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>09afd04fc54144adbbf6953f1e764ae4</uuid>
+					<name>Is GitHub fork synced with upstream - truecharts-charts</name>
+					<key>bnowakow.github.fork-synced-with-upstream[truecharts-charts]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>e5f96d20ed4b45609e5162dc350d0535</uuid>
+					<name>Is GitHub fork synced with upstream - truenas-charts</name>
+					<key>bnowakow.github.fork-synced-with-upstream[truenas-charts]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>e59e14fb628e412aa469e033badfa648</uuid>
 					<name>Is GitHub fork synced with upstream - truetool</name>
 					<key>bnowakow.github.fork-synced-with-upstream[truetool]</key>
