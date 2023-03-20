@@ -4,7 +4,7 @@ cd /mnt/MargokPool/home/sup/code/zabbix-scripts
 
 port=10211
 # TMP ports changed when load balancer isn't working
-port=37220
+#port=37220
 python2 zabbix.template.export.py --url http://192.168.0.20:$port --user='Admin' --password="$(cat .password)" --template='All'
 python2 zabbix.template.export.py --url http://192.168.0.20:$port --user='Admin' --password="$(cat .password)" --template='All' --type='host' --out-dir='hosts'
 
