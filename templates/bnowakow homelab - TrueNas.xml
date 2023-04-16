@@ -407,9 +407,22 @@
 					</tags>
 				</item>
 				<item>
-					<uuid>3aa9ce6c59864e619f5a4eeabbd50de4</uuid>
+					<uuid>479dc0a46be0427aa1cea642cfc3ff0e</uuid>
 					<name>Is helm up to date - traefik</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[traefik]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>3aa9ce6c59864e619f5a4eeabbd50de4</uuid>
+					<name>Is helm up to date - zabbix</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[zabbix]</key>
 					<delay>1h</delay>
 					<trends>0</trends>
 					<value_type>TEXT</value_type>
