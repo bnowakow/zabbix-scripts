@@ -329,6 +329,32 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>bc84d0934854438eb9a0be6f9987b0a4</uuid>
+					<name>Is helm up to date - external-service</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[external-service]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>13994e34854a41bcaa7cbf1f1d1f45c9</uuid>
+					<name>Is helm up to date - homer</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[homer]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>5c3bce6b68304b1eb296a459779aa361</uuid>
 					<name>Is helm up to date - pihole</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[pihole]</key>
@@ -381,9 +407,9 @@
 					</tags>
 				</item>
 				<item>
-					<uuid>13994e34854a41bcaa7cbf1f1d1f45c9</uuid>
-					<name>Is helm up to date - zabbix</name>
-					<key>bnowakow.nas.k8s.is-helm-up-to-date[zabbix]</key>
+					<uuid>3aa9ce6c59864e619f5a4eeabbd50de4</uuid>
+					<name>Is helm up to date - traefik</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[traefik]</key>
 					<delay>1h</delay>
 					<trends>0</trends>
 					<value_type>TEXT</value_type>
