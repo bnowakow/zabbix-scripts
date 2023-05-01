@@ -355,6 +355,19 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>7e0eaeb3e9c94fd78f552ba5e3dd9a45</uuid>
+					<name>Is helm up to date - jellyfin</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[jellyfin]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>5c3bce6b68304b1eb296a459779aa361</uuid>
 					<name>Is helm up to date - pihole</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[pihole]</key>
