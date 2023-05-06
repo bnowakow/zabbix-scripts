@@ -342,6 +342,32 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>4d5285db6a204e2d8db838ce0711d6b6</uuid>
+					<name>Is helm up to date - filebot</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[filebot]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>d3224afc06954aeab9141ef3fa71b444</uuid>
+					<name>Is helm up to date - flaresolverr</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[flaresolverr]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>13994e34854a41bcaa7cbf1f1d1f45c9</uuid>
 					<name>Is helm up to date - homer</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[homer]</key>
@@ -355,9 +381,48 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>141120802d9f427c884995308844e586</uuid>
+					<name>Is helm up to date - jackett</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[jackett]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>7e0eaeb3e9c94fd78f552ba5e3dd9a45</uuid>
 					<name>Is helm up to date - jellyfin</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[jellyfin]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>0589283de6534b73953b1a00deab0eb1</uuid>
+					<name>Is helm up to date - jellyseerr</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[jellyseerr]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>73c86a5e9a11405ca64ccd8512ec7712</uuid>
+					<name>Is helm up to date - overseerr</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[overseerr]</key>
 					<delay>1h</delay>
 					<trends>0</trends>
 					<value_type>TEXT</value_type>
@@ -397,6 +462,58 @@
 					<uuid>47a28b57dbbd4dd6bc003fbda967dc12</uuid>
 					<name>Is helm up to date - plex</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[plex]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>32e64b0fbec741368ca1df0e7f2f33d9</uuid>
+					<name>Is helm up to date - prowlarr</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[prowlarr]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>e93914492b794900a445fe4b798c09d3</uuid>
+					<name>Is helm up to date - radarr</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[radarr]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>539b7b6d76bd4395b1678c51dfefb1b0</uuid>
+					<name>Is helm up to date - scrutiny</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[scrutiny]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>216b4a6daec64f9b8f0f528276f198db</uuid>
+					<name>Is helm up to date - sonarr</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[sonarr]</key>
 					<delay>1h</delay>
 					<trends>0</trends>
 					<value_type>TEXT</value_type>
