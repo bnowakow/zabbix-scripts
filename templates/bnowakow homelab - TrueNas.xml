@@ -316,6 +316,19 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>97375c7519c0482ea905ff8d8921c357</uuid>
+					<name>Is helm up to date - bazarr</name>
+					<key>bnowakow.nas.k8s.is-helm-up-to-date[bazarr]</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>63b556a36caa42e184ed5a9cdd208b61</uuid>
 					<name>Is helm up to date - duckdns</name>
 					<key>bnowakow.nas.k8s.is-helm-up-to-date[duckdns]</key>
