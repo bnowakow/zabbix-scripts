@@ -150,6 +150,19 @@
 					</tags>
 				</item>
 				<item>
+					<uuid>d7e30f4569f94a08bb3e6d53dd626662</uuid>
+					<name>Is ha Kibana up to date</name>
+					<key>bnowakow.kibana.is-kibana-up-to-date</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
 					<uuid>5271043fc67949e1ab1f13faba62cc98</uuid>
 					<name>Number of days since last backup - home-assistant</name>
 					<key>bnowakow.nas.backup.number-of-days-since-last-backup[home-assistant]</key>
