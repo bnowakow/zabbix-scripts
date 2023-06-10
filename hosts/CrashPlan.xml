@@ -4,35 +4,30 @@
 	<date>2016-01-01T01:01:01Z</date>
 	<host_groups>
 		<host_group>
-			<uuid>dc579cd7a1a34222933f24f52a68bcd8</uuid>
-			<name>Linux servers</name>
+			<uuid>137f19e6e2dc4219b33553b812627bc2</uuid>
+			<name>Virtual machines</name>
 		</host_group>
 	</host_groups>
 	<hosts>
 		<host>
-			<host>bnowakowski.pl</host>
-			<name>bnowakowski.pl</name>
+			<host>CrashPlan</host>
+			<name>CrashPlan</name>
 			<templates>
 				<template>
+					<name>bnowakow homelab - CrashPlan</name>
+				</template>
+				<template>
 					<name>bnowakow homelab - Debian or Ubuntu</name>
-				</template>
-				<template>
-					<name>bnowakow homelab - ovh</name>
-				</template>
-				<template>
-					<name>Linux by Zabbix agent</name>
 				</template>
 			</templates>
 			<groups>
 				<group>
-					<name>Linux servers</name>
+					<name>Virtual machines</name>
 				</group>
 			</groups>
 			<interfaces>
 				<interface>
-					<useip>NO</useip>
-					<ip/>
-					<dns>ovh.bnowakowski.pl</dns>
+					<ip>192.168.0.240</ip>
 					<interface_ref>if1</interface_ref>
 				</interface>
 			</interfaces>

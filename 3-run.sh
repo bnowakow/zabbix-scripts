@@ -2,8 +2,8 @@
 
 cd /mnt/MargokPool/home/sup/code/zabbix-scripts
 
-python2 zabbix.template.export.py --url http://zabbix.local.bnowakowski.pl --user='Admin' --password="$(cat .password)" --template='All'
-python2 zabbix.template.export.py --url http://zabbix.local.bnowakowski.pl --user='Admin' --password="$(cat .password)" --template='All' --type='host' --out-dir='hosts'
+python2 zabbix.template.export.py --url http://zabbix.local.bnowakowski.pl:10211 --user='Admin' --password="$(cat .password)" --template='All'
+python2 zabbix.template.export.py --url http://zabbix.local.bnowakowski.pl:10211 --user='Admin' --password="$(cat .password)" --template='All' --type='host' --out-dir='hosts'
 
 # TODO figure out how to download only my templates (i.e. using tag) in above --template argument. As workaround deleting other templates
 find templates -type f -not -name 'bnowakow*' -delete

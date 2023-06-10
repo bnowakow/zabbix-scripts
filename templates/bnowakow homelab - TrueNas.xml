@@ -216,6 +216,7 @@
 					<key>bnowakow.nas.crashplan.is-crashplan-running</key>
 					<delay>1h</delay>
 					<trends>0</trends>
+					<status>DISABLED</status>
 					<value_type>TEXT</value_type>
 					<tags>
 						<tag>
@@ -243,6 +244,7 @@
 					<key>bnowakow.nas.crashplan.last-crashplan-backed-up</key>
 					<delay>1h</delay>
 					<trends>0</trends>
+					<status>DISABLED</status>
 					<value_type>TEXT</value_type>
 					<tags>
 						<tag>
@@ -256,6 +258,7 @@
 					<key>bnowakow.nas.crashplan.last-crashplan-history-in-service</key>
 					<delay>1h</delay>
 					<trends>0</trends>
+					<status>DISABLED</status>
 					<value_type>TEXT</value_type>
 					<tags>
 						<tag>
@@ -269,6 +272,7 @@
 					<key>bnowakow.nas.crashplan.last-crashplan-scanning-files-completed</key>
 					<delay>1h</delay>
 					<trends>0</trends>
+					<status>DISABLED</status>
 					<value_type>TEXT</value_type>
 					<tags>
 						<tag>
@@ -282,6 +286,7 @@
 					<key>bnowakow.nas.crashplan.last-crashplan-SyncProgressStats</key>
 					<delay>1h</delay>
 					<trends>0</trends>
+					<status>DISABLED</status>
 					<value_type>TEXT</value_type>
 					<tags>
 						<tag>
@@ -293,32 +298,6 @@
 					<uuid>73c0fba32cbd41cc840dca557ca94706</uuid>
 					<name>Is ha hassos up to date</name>
 					<key>bnowakow.nas.ha.is-hassos-up-to-date</key>
-					<delay>1h</delay>
-					<trends>0</trends>
-					<value_type>TEXT</value_type>
-					<tags>
-						<tag>
-							<tag>bnowakow</tag>
-						</tag>
-					</tags>
-				</item>
-				<item>
-					<uuid>9e0cb6b81fa6448c8af5b2071d1793de</uuid>
-					<name>Is ha Home Assistant addons up to date</name>
-					<key>bnowakow.nas.ha.is-home-assistant-addons-up-to-date</key>
-					<delay>1h</delay>
-					<trends>0</trends>
-					<value_type>TEXT</value_type>
-					<tags>
-						<tag>
-							<tag>bnowakow</tag>
-						</tag>
-					</tags>
-				</item>
-				<item>
-					<uuid>32a82b12ce6a4b579663fb8e92b4bba6</uuid>
-					<name>Is ha Home Assistant up to date</name>
-					<key>bnowakow.nas.ha.is-home-assistant-up-to-date</key>
 					<delay>1h</delay>
 					<trends>0</trends>
 					<value_type>TEXT</value_type>
@@ -704,18 +683,6 @@
 		</template>
 	</templates>
 	<triggers>
-		<trigger>
-			<uuid>0beaf4bf1b364adeb4b0f17ee4e23c04</uuid>
-			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.ha.is-hassos-up-to-date)&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.ha.is-home-assistant-up-to-date)&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.ha.is-home-assistant-addons-up-to-date)&lt;&gt;&quot;true&quot;</expression>
-			<name>Home Assistant or hassos isn't up to date</name>
-			<priority>HIGH</priority>
-			<manual_close>YES</manual_close>
-			<tags>
-				<tag>
-					<tag>bnowakow</tag>
-				</tag>
-			</tags>
-		</trigger>
 		<trigger>
 			<uuid>8fddfeffee324e6694ce938c347e54df</uuid>
 			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh-sup])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh-admin])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[proxmox])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[home-assistant])&gt;5</expression>

@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<zabbix_export>
+	<version>6.2</version>
+	<date>2016-01-01T01:01:01Z</date>
+	<template_groups>
+		<template_group>
+			<uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+			<name>Templates</name>
+		</template_group>
+	</template_groups>
+	<templates>
+		<template>
+			<uuid>c2d9ebc562054e3788593aa11b94f0b7</uuid>
+			<template>bnowakow homelab - CrashPlan</template>
+			<name>bnowakow homelab - CrashPlan</name>
+			<groups>
+				<group>
+					<name>Templates</name>
+				</group>
+			</groups>
+			<items>
+				<item>
+					<uuid>416360a4be974222bb2a8b28201e939b</uuid>
+					<name>Is crashplan running</name>
+					<key>bnowakow.nas.crashplan.is-crashplan-running</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>3d4a98c3062741f5a4a55c45aa6d40a7</uuid>
+					<name>Last crashplan backed up</name>
+					<key>bnowakow.nas.crashplan.last-crashplan-backed-up</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>15d97134f5c6453b9117dc8385485899</uuid>
+					<name>Last crashplan history in service.log</name>
+					<key>bnowakow.nas.crashplan.last-crashplan-history-in-service</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>9ae3157e3490483e93bc4abca0777514</uuid>
+					<name>Last crashplan scanning files completed</name>
+					<key>bnowakow.nas.crashplan.last-crashplan-scanning-files-completed</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>c630c969f4254aa2a1d6ccd403ad29dd</uuid>
+					<name>Last crashplan SyncProgressStats</name>
+					<key>bnowakow.nas.crashplan.last-crashplan-SyncProgressStats</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+			</items>
+			<tags>
+				<tag>
+					<tag>bnowakow</tag>
+				</tag>
+			</tags>
+		</template>
+	</templates>
+</zabbix_export>
