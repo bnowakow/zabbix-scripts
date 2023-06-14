@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<zabbix_export>
+	<version>6.2</version>
+	<date>2016-01-01T01:01:01Z</date>
+	<template_groups>
+		<template_group>
+			<uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+			<name>Templates</name>
+		</template_group>
+	</template_groups>
+	<templates>
+		<template>
+			<uuid>0aacf21df3d042419ed1363838fa1391</uuid>
+			<template>bnowakow homelab - Transmission</template>
+			<name>bnowakow homelab - Transmission</name>
+			<groups>
+				<group>
+					<name>Templates</name>
+				</group>
+			</groups>
+			<items>
+				<item>
+					<uuid>d321710f925746168f20805d2ed6786b</uuid>
+					<name>Is nordvpn running</name>
+					<key>bnowakow.nas.transmission.is-nordvpn-running</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>462961d2f7134af9a2429b91ae182a04</uuid>
+					<name>Is transmission running</name>
+					<key>bnowakow.nas.transmission.is-transmission-running</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+			</items>
+			<tags>
+				<tag>
+					<tag>bnowakow</tag>
+				</tag>
+			</tags>
+		</template>
+	</templates>
+</zabbix_export>

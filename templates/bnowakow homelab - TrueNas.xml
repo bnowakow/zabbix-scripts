@@ -595,32 +595,6 @@
 					</triggers>
 				</item>
 				<item>
-					<uuid>0e1dddb08c75421a95cf7c2fba6b9047</uuid>
-					<name>Is nordvpn running</name>
-					<key>bnowakow.nas.transmission.is-nordvpn-running</key>
-					<delay>1h</delay>
-					<trends>0</trends>
-					<value_type>TEXT</value_type>
-					<tags>
-						<tag>
-							<tag>bnowakow</tag>
-						</tag>
-					</tags>
-				</item>
-				<item>
-					<uuid>c9fc0e7b260046dfb06b1e1d8db762d0</uuid>
-					<name>Is transmission running</name>
-					<key>bnowakow.nas.transmission.is-transmission-running</key>
-					<delay>1h</delay>
-					<trends>0</trends>
-					<value_type>TEXT</value_type>
-					<tags>
-						<tag>
-							<tag>bnowakow</tag>
-						</tag>
-					</tags>
-				</item>
-				<item>
 					<uuid>7e62e7956f234b48aee338040fe170c6</uuid>
 					<name>Is TrueNAS up to date</name>
 					<key>bnowakow.nas.truenas.is-truenas-up-to-date</key>
@@ -687,18 +661,6 @@
 			<uuid>8fddfeffee324e6694ce938c347e54df</uuid>
 			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh-sup])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh-admin])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[proxmox])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[home-assistant])&gt;5</expression>
 			<name>Number of days since last backup &gt; 5</name>
-			<priority>HIGH</priority>
-			<manual_close>YES</manual_close>
-			<tags>
-				<tag>
-					<tag>bnowakow</tag>
-				</tag>
-			</tags>
-		</trigger>
-		<trigger>
-			<uuid>760ab80eaddc4fdfa9b5181774157713</uuid>
-			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.transmission.is-transmission-running)&lt;&gt;&quot;true&quot; or last(/bnowakow homelab - TrueNas/bnowakow.nas.transmission.is-nordvpn-running)&lt;&gt;&quot;true&quot;</expression>
-			<name>Transmission or nordvpn is not running</name>
 			<priority>HIGH</priority>
 			<manual_close>YES</manual_close>
 			<tags>
