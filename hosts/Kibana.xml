@@ -16,6 +16,9 @@
 				<template>
 					<name>bnowakow homelab - Debian or Ubuntu</name>
 				</template>
+				<template>
+					<name>bnowakow homelab - Kibana</name>
+				</template>
 			</templates>
 			<groups>
 				<group>
