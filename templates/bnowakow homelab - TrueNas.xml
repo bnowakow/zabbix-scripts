@@ -188,7 +188,7 @@
 				<item>
 					<uuid>b890690c2ded4626a23a2f372f01445d</uuid>
 					<name>Number of days since last backup - proxmox</name>
-					<key>bnowakow.nas.backup.number-of-days-since-last-backup[proxmox]</key>
+					<key>bnowakow.nas.backup.number-of-days-since-last-backup[proxmox/config]</key>
 					<delay>1h</delay>
 					<units>days</units>
 					<tags>
@@ -646,7 +646,7 @@
 	<triggers>
 		<trigger>
 			<uuid>8fddfeffee324e6694ce938c347e54df</uuid>
-			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh-sup])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh-admin])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[proxmox])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[home-assistant])&gt;5</expression>
+			<expression>last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh-sup])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[ovh-admin])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[proxmox/config])&gt;5 or last(/bnowakow homelab - TrueNas/bnowakow.nas.backup.number-of-days-since-last-backup[home-assistant])&gt;5</expression>
 			<name>Number of days since last backup &gt; 5</name>
 			<priority>HIGH</priority>
 			<manual_close>YES</manual_close>
