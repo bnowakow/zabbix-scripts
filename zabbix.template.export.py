@@ -17,6 +17,7 @@ parser.add_argument('--debug', help='Enable debug mode, this will show you all t
 parser.add_argument('--url', help='URL to the zabbix server (example: https://monitor.example.com/zabbix)',required = True)
 parser.add_argument('--user', help='The zabbix api user',required = True)
 parser.add_argument('--password', help='The zabbix api password',required = True)
+parser.add_argument('--type', help='Type of object to be exported default is template, could be also a host', default='template')
 args = parser.parse_args()
 
 if args.debug:
@@ -62,7 +63,7 @@ class ZabbixTemplates:
           "host": [args.tempaltes]
         }
       
-      result = self.zapi.do_request('template.get',request_args)
+      result = self.zapi.do_request(args.type+'.get',request_args)
       if not result['result']:
         print "No matching host found for '{}'".format(hostname)
         exit(-3)
@@ -70,14 +71,14 @@ class ZabbixTemplates:
       if result['result']:
         for t in result['result']:
           dest = args.out_dir+'/'+t['host']+'.xml'
-          self.exportTemplate(t['templateid'],dest)
+          self.exportTemplate(t[args.type+'id'],dest,args)
           
-    def exportTemplate(self,tid,oput):
+    def exportTemplate(self,tid,oput,arg):
       
-      print "tempalteid:",tid," output:",oput
+      print "objectid:",tid," output:",oput
       args = {
         "options": {
-            "templates": [tid]
+            arg.type+"s": [tid]
         },
         "format": "xml"
       }

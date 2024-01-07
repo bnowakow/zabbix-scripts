@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<zabbix_export>
+	<version>6.2</version>
+	<date>2016-01-01T01:01:01Z</date>
+	<template_groups>
+		<template_group>
+			<uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+			<name>Templates</name>
+		</template_group>
+	</template_groups>
+	<templates>
+		<template>
+			<uuid>6107f4e410c94d5797a3d828a6e42029</uuid>
+			<template>bnowakow homelab - Proxmox</template>
+			<name>bnowakow homelab - Proxmox</name>
+			<groups>
+				<group>
+					<name>Templates</name>
+				</group>
+			</groups>
+			<items>
+				<item>
+					<uuid>6822164940514753820fecaa23a8551a</uuid>
+					<name>Is Proxmox kernel up to date</name>
+					<key>bnowakow.proxmox.is-proxmox-kernel-up-to-date</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>aa109daa4ad94d01bfccbb301cbdab4c</uuid>
+					<name>Is Proxmox is up to date</name>
+					<key>bnowakow.proxmox.is-proxmox-up-to-date</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+			</items>
+			<tags>
+				<tag>
+					<tag>bnowakow</tag>
+				</tag>
+			</tags>
+		</template>
+	</templates>
+</zabbix_export>

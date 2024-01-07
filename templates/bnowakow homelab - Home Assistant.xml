@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<zabbix_export>
+	<version>6.2</version>
+	<date>2016-01-01T01:01:01Z</date>
+	<template_groups>
+		<template_group>
+			<uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+			<name>Templates</name>
+		</template_group>
+	</template_groups>
+	<templates>
+		<template>
+			<uuid>83c4eac715514d59a94dfae2e98c0606</uuid>
+			<template>bnowakow homelab - Home Assistant</template>
+			<name>bnowakow homelab - Home Assistant</name>
+			<groups>
+				<group>
+					<name>Templates</name>
+				</group>
+			</groups>
+			<items>
+				<item>
+					<uuid>4791b0b37e6a4dc0bd3b46446721be61</uuid>
+					<name>Is ha Home Assistant addons up to date</name>
+					<key>bnowakow.nas.ha.is-home-assistant-addons-up-to-date</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+				<item>
+					<uuid>062e28395bc249c58363cd5132ddaad3</uuid>
+					<name>Is ha Home Assistant up to date</name>
+					<key>bnowakow.nas.ha.is-home-assistant-up-to-date</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+			</items>
+			<tags>
+				<tag>
+					<tag>bnowakow</tag>
+				</tag>
+			</tags>
+		</template>
+	</templates>
+</zabbix_export>

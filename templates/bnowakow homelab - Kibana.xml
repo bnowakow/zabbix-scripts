@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<zabbix_export>
+	<version>6.2</version>
+	<date>2016-01-01T01:01:01Z</date>
+	<template_groups>
+		<template_group>
+			<uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+			<name>Templates</name>
+		</template_group>
+	</template_groups>
+	<templates>
+		<template>
+			<uuid>dddecbe757ca460ca22416fe62cb4f2e</uuid>
+			<template>bnowakow homelab - Kibana</template>
+			<name>bnowakow homelab - Kibana</name>
+			<groups>
+				<group>
+					<name>Templates</name>
+				</group>
+			</groups>
+			<items>
+				<item>
+					<uuid>df85638a6c3a44fe94a718d5ac2ef2f9</uuid>
+					<name>Is ha Kibana up to date</name>
+					<key>bnowakow.kibana.is-kibana-up-to-date</key>
+					<delay>1h</delay>
+					<trends>0</trends>
+					<value_type>TEXT</value_type>
+					<tags>
+						<tag>
+							<tag>bnowakow</tag>
+						</tag>
+					</tags>
+				</item>
+			</items>
+			<tags>
+				<tag>
+					<tag>bnowakow</tag>
+				</tag>
+			</tags>
+		</template>
+	</templates>
+</zabbix_export>
