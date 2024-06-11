@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /mnt/MargokPool/home/sup/code/zabbix-scripts
+cd ~/code/zabbix-scripts
 
 python2.6 zabbix.template.export.py --url http://rancher.localdomain.bnowakowski.pl:8888 --user='Admin' --password="$(cat .password)" --template='All'
 python2.6 zabbix.template.export.py --url http://rancher.localdomain.bnowakowski.pl:8888 --user='Admin' --password="$(cat .password)" --template='All' --type='host' --out-dir='hosts'
